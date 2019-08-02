@@ -1,0 +1,100 @@
+.header a:hover {
+  border-bottom: 3px solid white
+}
+.insertBtn:hover{
+  background-color: DarkOrange
+}
+.addIncomeBtn:hover {
+  background-color: DarkOrange
+}
+.deleteItem:hover {
+  transform: scale(1.3);
+}
+@keyframes logInBoxHeight {
+    0% {height: 0px;}
+    100% {height: 300px;}
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  /*=====================app section====================================*/
+  .app {
+    flex-direction: column;
+  }
+  .flex1 {
+    width: 100vw;
+    min-height: 10vh;
+    border-right: none;
+  }
+  .flex2 {
+    width: 100vw;
+    min-height: 90vh;
+  }
+  .flex21 {
+    flex-grow: 1;
+  }
+  .pageTitle {
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
+  .pageTitle p {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .pageTitle h1 {
+    font-size: 35px;
+  }
+  /*======================header (flex1) & footer section================================*/
+  .header {
+    height: 100%;
+  }
+  .header ul {
+    padding: 10px 10px;
+  }
+  .fotter {
+    border-top: 2px solid black;
+    width: 90%;
+  }
+  /*======================log in page section================================*/
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .logInText {
+    flex: 30%;
+    height: 400px;
+  }
+  .logInText h1 {
+    font-size: 35px !important;
+  }
+
+  /*======================create new acount page section================================*/
+
+  /*======================expenses table section===================*/
+
+  /*======================on table PAGE section===================*/
+  .expensesTableDetailsPage {
+    flex-direction: column;
+  }
+  .expensesDetails th {
+    width: 25vw;
+  }
+
+  /*======================create table page page section===================*/
+  .createTableForm form {
+    flex-direction: column;
+  }
+  .createTableFlex1 {
+    margin: 10px auto;
+  }
+  .createTableFlex2 {
+    margin: 10px auto;
+  }
+  /*======================statistics page section===================*/
+
+  /*======================incomes page section===================*/
+
+}

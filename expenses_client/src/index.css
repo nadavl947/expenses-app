@@ -1,0 +1,397 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: arial;
+}
+body a {
+  text-decoration: none;
+}
+body input {
+  outline: none;
+  cursor: pointer;
+}
+body button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+body ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+body h1 {
+  font-family: arial;
+  margin: 0px;
+  color: rgb(51, 51, 51);
+}
+body h2 {
+  margin: 0px;
+}
+body p {
+  margin: 0px;
+  padding: 0px;
+}
+/*=====================app section====================================*/
+.app {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.flex1 {
+  width: 12vw;
+  min-height: 100vh;
+  border-right: 2px solid red;
+  background-color: rgb(45, 6, 45);
+}
+.flex2 {
+  width: 88vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 240, 210);
+}
+.flex21 {
+  flex-grow: 1;
+}
+.pageTitle {
+  padding-left: 5%;
+  padding-top: 1%;
+}
+.pageTitle p {
+  font-size: 18px;
+  color: gray;
+  line-height: 2;
+}
+.pageTitle h1 {
+  font-size: 50px;
+}
+/*======================header (flex1) & footer section================================*/
+.header {
+  height: 100%;
+}
+.header ul {
+  padding: 20px 10px;
+  line-height: 2;
+}
+.header a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.fotter {
+  border-top: 2px solid black;
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+}
+.sideSocialMedia {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hidden {
+  display: inline-block;
+}
+.visibel {
+  display: inline-block;
+}
+/*======================log in page section================================*/
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5% !important;
+  padding: 0px 5%;
+}
+.logInText {
+  flex: 30%;
+  height: 400px;
+}
+.logInText h1 {
+  font-size: 64px !important;
+  margin-left: 20px;
+}
+.logInText h4 {
+  font-size: 18px;
+  color: gray;
+  line-height: 2;
+  margin-left: 20px;
+}
+.LogInForm {
+  text-align: center;
+  margin: 5% auto;
+  line-height: 2;
+  font-weight: bold;
+  width: 300px;
+  box-shadow: 0px 0px 5px 0px rgb(45, 6, 45);
+  overflow: hidden;
+  animation-name: logInBoxHeight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.LogInForm h5 {
+  margin: 0px;
+  font-size: 22px;
+}
+.loginTitle {
+  background-image: linear-gradient(to bottom right, rgb(230, 46, 0), white);
+  color: white;
+  padding-top: 4%;
+  height: 50px;
+}
+.logInBox {
+  background-color: rgb(240, 255, 240);
+  padding-bottom: 4%;
+  line-height: 4 !important;
+  height: 250px;
+}
+.logInBox P {
+  margin: 0px 10px;
+  border-radius: 10px;
+  line-height: 2 !important;
+  border-bottom: 1px solid red;
+}
+.logInBox li {
+  display: inline-block;
+  margin: 0px 1%;
+}
+.confirmBtn {
+  background-color: rgb(0, 230, 0);
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.createAcountBtn{
+  color: blue;
+  text-decoration: underline;
+}
+
+/*======================create new acount page section================================*/
+.createNewAcountBox {
+  background-color: rgb(240, 255, 240);
+  padding-bottom: 4%;
+  line-height: 2 !important;
+  height: 250px;
+}
+.createNewAcountBox input {
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid DarkOrange;
+  text-align: center;
+}
+/*======================expenses table section===================*/
+.expensesPage {
+  display: flex;
+  flex-direction: column;
+}
+.expensesTablePage {
+  text-align: center;
+  flex-grow: 1;
+}
+.singleTable {
+  box-shadow: 0px 0px 5px 0px black;
+  display: inline-block;
+  margin: 2%;
+  width: 200px;
+  height: 200px;
+}
+.deleteTableBtn input{
+  float: right;
+  height: 5%;
+  background: none;
+  border: none;
+}
+.tabletitle button{
+  width: 100%;
+  height: 95%;
+}
+.createTableLink {
+  box-shadow: 0px 0px 5px 0px black;
+  display: inline-block;
+  margin: 2%;
+  padding: 75px 28px;
+  color: black;
+  background-image: linear-gradient(to bottom right, blue, white);
+  transition: 1s;
+}
+
+/*======================on table PAGE section===================*/
+.tableDetailsPage{
+  display: flex;
+  flex-direction: column;
+}
+.expensesTableDetailsPage {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.insertToExpenseTable {
+  margin: 30px 7%;
+  line-height: 2;
+  text-align: center;
+  font-weight: bold;
+  width: 260px;
+  box-shadow: 0px 0px 5px 0px rgb(45, 6, 45);
+}
+.insertToExpenseTableForm {
+  background-color: rgb(191, 191, 191);
+  padding-bottom: 4%;
+}
+.insertToExpenseTableForm input {
+  border: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid DarkOrange;
+  text-align: center;
+}
+.expensesDetails {
+  border-radius: 5px;
+  border: 0.5px solid #ddd;
+  overflow-y: scroll;
+  min-height: 20vh;
+  max-height: 40vh;
+}
+.expensesDetails tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.expensesDetails tr{
+  line-height: 2;
+  background-color: white;
+}
+.expensesDetails th {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: 1% 5%;
+  width: 15vw;
+}
+.insertBtn {
+  border: none !important;
+  margin-top: 30px;
+  background-color: rgb(204, 112, 0);
+  transition: 0.5s;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.deleteItem button{
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+}
+.deleteItem {
+  transition: 0.5s;
+}
+
+/*======================create table page page section===================*/
+.createTableForm form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: bold;
+}
+.createTableForm input {
+  border: 1px solid DarkOrange;
+  text-align: center;
+}
+.createTableFlex1 {
+  margin-right: 20%;
+}
+/*======================statistics page section===================*/
+.statisticsPage {
+  text-align: center;
+  padding: 5%;
+}
+.statisticsItem {
+  border-bottom: 3px solid DarkOrange;
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 0px;
+}
+.statisticsItem p {
+  font-size: 18px;
+  color: gray;
+}
+
+/*======================incomes page section===================*/
+.incompesPageComponents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.addIncome {
+  text-align: center;
+  margin: 5% 0px;
+  line-height: 2;
+  font-weight: bold;
+  width: 280px;
+  box-shadow: 0px 0px 5px 0px rgb(45, 6, 45);
+}
+.addTitle {
+  background-image: linear-gradient(to bottom right, rgb(230, 46, 0), white);
+  color: white;
+  padding-top: 4%;
+}
+.addIncomeForm {
+  background-color: rgb(191, 191, 191);
+  padding-bottom: 4%;
+}
+.addIncomeForm input {
+  border: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid DarkOrange;
+  text-align: center;
+}
+.addIncomeBtn  {
+  border: none !important;
+  margin-top: 30px;
+  background-color: rgb(204, 112, 0);
+  transition: 0.5s;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.incomesTable {
+  border-radius: 5px;
+  border: 0.5px solid #ddd;
+  overflow-y: scroll;
+  max-height: 40vh;
+  margin: 5% 0px;
+}
+.incomesTable th {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  padding: 1% 5%;
+  width: 20vw;
+}
+.incomesTable tr {
+  line-height: 2;
+  background-color: white;
+}
+.incomesTable tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.incomesDoughnut {
+  margin: 5% 0px;
+}
+.deleteIncome {
+  text-align: center;
+}
+.deleteIncome button{
+  font-weight: bold;
+  color: red;
+}
